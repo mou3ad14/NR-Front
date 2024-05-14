@@ -1,0 +1,373 @@
+<section class="mt-3">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-2 ">
+                <div class="card shadow-sm custom-card border border-primary small-card" cdkDrag *ngIf="data">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <p class="p-card text-center custom-color"><strong>Nb jours de Fabrication</strong></p>
+                        <div class="d-lg-flex">
+                            <img src="../../assets/fonts/material-symbols--partner-exchange.svg" class="logo" />
+                            <h3 class="" style="margin-left: 14px;">{{ data['nbjourDTU'] }} </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm custom-card border border-primary mt-3 small-card" cdkDrag>
+                    <div class="card-body" style="position: relative;">
+                        <div class="d-lg-flex">
+                            <div class="logo-wrapper" style="position: absolute; top: 10px; left: -15px;">
+                                <img src="../../assets/fonts/fa-solid--hands-helping.svg" class="logo" />
+                            </div>
+                        </div>
+                        <p class="p-card text-center custom-color"
+                            style="margin-left: 7px; margin-top: -10px; height: 155px;"><strong>Synthèse
+                                finance</strong></p>
+                        <div class="para-container">
+                            <p class="text-center">409K€ Devis validé</p>
+                            <p class="text-center">290K€ BDC Réceptionnés</p>
+                            <p class="text-center">000K€ Facturé</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow-sm custom-card border border-primary medium-card" cdkDrag>
+                    <div class="card-body position-relative">
+                        <img src="../../assets/fonts/mdi--person-tie.svg"
+                            class="logo position-absolute top-0 start-0 mt-3 ms-3" />
+                        <h6 class="p-card text-center custom-color"><strong>Recette</strong></h6>
+                        <div class="d-lg-flex justify-content-lg-between">
+                            <strong>
+                                <p class="text-center" style="margin-left: 49px;">0</p>
+                            </strong>
+                            <strong>
+                                <p class="text-center" style="margin-right: 49px;">Bloquantes</p>
+                            </strong>
+                        </div>
+
+                        <div class="d-lg-flex justify-content-lg-between">
+                            <strong>
+                                <p class="text-center" style="margin-left: 49px;">0</p>
+                            </strong>
+                            <strong>
+                                <p class="text-center" style="margin-right: 65px;">Majeures</p>
+                            </strong>
+                        </div>
+
+                        <div class="d-lg-flex justify-content-lg-between">
+                            <strong>
+                                <p class="text-center" style="margin-left: 49px;">0</p>
+                            </strong>
+                            <strong>
+                                <p class="text-center" style="margin-right: 65px;">Mineures</p>
+                            </strong>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card shadow-sm custom-card border border-primary medium-card" cdkDrag
+                    style="top: 13px; height: 100px;">
+                    <div class="card-body position-relative">
+                        <h6 class="p-card custom-color" *ngIf="data"><strong>Turnover</strong></h6>
+                        <h2 class="text-center">{{data['turnover']}}%</h2>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm custom-card border border-primary" cdkDrag style="top: 23px;height: 135px;">
+                    <div class="card-body position-relative">
+                        <h6 class="p-card custom-color"><strong>Niveau de sécurité</strong></h6>
+                        <img src="../../assets/fonts/gis--earth-network.svg"
+                            class="logo position-absolute start-0 mt-2 ms-4" />
+                        <h2 class="text-center">10</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-sm custom-card border border-primary" cdkDrag>
+                    <div class="card-body position-relative">
+                        <img src="../../assets/fonts/mdi--person-tie.svg"
+                            class="logo position-absolute top-0 start-0 mt-3 ms-3" />
+                        <h6 class="p-card text-center custom-color"><strong>Garantie</strong></h6>
+
+
+                        <div class="d-lg-flex justify-content-lg-between">
+                            <strong>
+                                <p class="text-center" style="margin-left: 49px;">0</p>
+                            </strong>
+                            <strong>
+                                <p class="text-center" style="margin-right: 49px;">Bloquantes</p>
+                            </strong>
+                        </div>
+
+                        <div class="d-lg-flex justify-content-lg-between">
+                            <strong>
+                                <p class="text-center" style="margin-left: 49px;">0</p>
+                            </strong>
+                            <strong>
+                                <p class="text-center" style="margin-right: 65px;">Majeures</p>
+                            </strong>
+                        </div>
+
+                        <div class="d-lg-flex justify-content-lg-between">
+                            <strong>
+                                <p class="text-center" style="margin-left: 49px;">0</p>
+                            </strong>
+                            <strong>
+                                <p class="text-center" style="margin-right: 65px;">Mineures</p>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm custom-card border border-primary" style="top: 14px; height: 246px;" cdkDrag>
+                    <div class="card-body position-relative">
+                        <h6 class="p-card text-center custom-color"><strong>Délais fourniture supports</strong></h6>
+
+
+                        <table class=" table-bordered mt-4"
+                            style="background-color: transparent;height: 100px; width: 230px;">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>M-1</th>
+                                    <th>M</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Supports</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>CR</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm custom-card border border-primary" cdkDrag>
+                    <div class="card-body">
+                        <p class="p-card text-center custom-color"><strong>Seuil de qualimétrie</strong></p>
+
+                        <div class="d-lg-flex" style="justify-content: space-between;">
+                            <strong>
+                                <p>Violations</p>
+                            </strong>
+                            <p>0 Bloquantes</p>
+                            <p>0 Critiques</p>
+                        </div>
+                        <div class="d-lg-flex">
+                            <p style="font-weight: 450;">commentaire(code)</p>
+                            <div class="progress " style="width: 80%;margin-left: 10px; margin-top: 6px;">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    80%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+
+
+                        </div>
+                        <!-- <div class="d-lg-flex">
+                        <p style="font-weight: 450;">Duplication du code</p>
+
+                        <div class="progress" style="width: 45%;margin-left: 10px; margin-top: 6px; ">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                              60%
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <div class="d-lg-flex">
+                            <p style="font-weight: 450;">Duplication du code</p>
+
+                            <div class="progress"
+                                style="width: 45%;margin-left: 10px; margin-top: 6px; position: relative;">
+
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:70%">
+                                    60%
+                                </div>
+
+                                <div class="progress-line"
+                                    style="position: absolute; left: 80%; top: 0; height: 100%; width: 2px; background-color: red;">
+                                </div>
+
+                                <div class="progress-label"
+                                    style="position: absolute; left: calc(90% + 5px); top: -20px;">90%</div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="d-lg-flex">
+                            <p style="font-weight: 450;">Couverture TU</p>
+                            <div class="progress " style="width: 50%;margin-left: 10px; margin-top: 6px;">
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="30"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                    30%
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="d-lg-flex">
+                            <p style="font-weight: 450;">Couverture TU</p>
+
+                            <div class="progress"
+                                style="width: 45%;margin-left: 10px; margin-top: 6px; position: relative;">
+
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:30%">
+                                    30%
+                                </div>
+
+                                <div class="progress-line"
+                                    style="position: absolute; left: 80%; top: 0; height: 100%; width: 2px; background-color: red;">
+                                </div>
+
+                                <div class="progress-label"
+                                    style="position: absolute; left: calc(90% + 5px); top: -20px;">30%</div>
+                            </div>
+                        </div>
+                        <p style="font-weight: 450;">Quality Gate</p>
+
+                        <hr style="border-top: 1px solid black;">
+
+                        <div style="display: flex;justify-content: space-between;">
+                            <p style="font-weight: 500;">OWASP</p>
+                            <p style="font-weight: 450;">Actuel</p>
+                            <p style="font-weight: 450;">Cible</p>
+
+                        </div>
+
+                        <div style="display: flex;justify-content: space-between;">
+                            <p style="font-weight: 500;">Hot spots</p>
+                            <p style="font-weight: 450;margin-right: 35px;">0</p>
+                            <p style="font-weight: 450;margin-right: 5px;">0</p>
+
+                        </div>
+
+                        <div style="display: flex;justify-content: space-between;">
+                            <p style="font-weight: 500;">Vulnérabilités</p>
+                            <p style="font-weight: 450;margin-right: 62px;">0</p>
+                            <p style="font-weight: 450;margin-right: 5px;">0</p>
+
+                        </div>
+                        <div style="display: flex;justify-content: space-between; align-items: center;">
+                            <p style="font-weight: 500;">SAST</p>
+                            <p style="font-weight: 450;margin-right: -15px;">OK</p>
+                            <p style="font-weight: 450;margin-right: 5px;">OK</p>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <div class="card shadow-sm custom-card border border-primary small-card" cdkDrag>
+                    <div class="card-body">
+                        <p class="p-card custom-color"><strong>Suivi du périmètre V1</strong></p>
+                        <div class="d-lg-flex" style="justify-content: space-between">
+                            <table class="table-bordered mt-4" style="background-color: transparent; width: 380px;">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Démarré</th>
+                                        <th>Clôturé</th>
+                                        <th>Modifié</th>
+                                        <th>Supprimé</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>US</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TS</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table-bordered mb-1"
+                                style="background-color: transparent; margin-right: 10px; max-width: 100%">
+                                <thead>
+                                    <tr>
+                                        <th>Avancement Epics</th>
+                                        <th>Date de fin prévisionnelle</th>
+                                        <th>En cours</th>
+                                        <th>En qualif</th>
+                                        <th>Livré</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Admin Politique: Configuration Politique</td>
+                                        <td>dd/mm/202A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Admin des motifs</td>
+                                        <td>dd/mm/202A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suspension, Reprise et Consultation des Parcours</td>
+                                        <td>dd/mm/202A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mécanisme des Suspension, Reprise et Clôture</td>
+                                        <td>dd/mm/202A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
